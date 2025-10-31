@@ -1,4 +1,5 @@
 import json
+import random
 class AuthorSet:
     def __init__(self, sentence: str):
         self.__authorDict = {}
@@ -72,16 +73,6 @@ class AuthorSet:
             json.dump(sortedDict, f, indent=2)
 
 def main():
-    aset = AuthorSet("harry potter by rowling in 1997")
-    aset.feedFromFile("sample.txt")
-    
-    print("rowling:", aset.countForAuthor("rowling"))
-    print("tolkien:", aset.countForAuthor("tolkien"))
-    print("asimov:", aset.countForAuthor("asimov"))
-    print("most productive:", aset.mostProductiveAuthor())
-    print("top 3 authors:", aset.topKAuthors(3))
-    aset.createJSONFile("result.json")
-    print("JSON file 'result.json' created successfully.")
 
 if __name__ == "__main__":
     main()
