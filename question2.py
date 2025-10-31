@@ -54,6 +54,7 @@ class AuthorSet:
 
 
 def main():
+    aset = AuthorSet("harry potter by rowling in 1997")
     test_cases = [
     "harry potter and the philosopher's stone by rowling in 1997",
     "harry potter and the chamber of secrets by rowling in 1998",
